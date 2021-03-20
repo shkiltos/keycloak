@@ -165,6 +165,12 @@
                     kc.timeSkew = initOptions.timeSkew;
                 }
 
+                if (typeof initOptions.timeRefreshInAdvance === 'number') {
+                    kc.timeRefreshInAdvance = initOptions.timeRefreshInAdvance;
+                } else {
+                    kc.timeRefreshInAdvance = 0;
+                }
+
                 if(initOptions.redirectUri) {
                     kc.redirectUri = initOptions.redirectUri;
                 }
